@@ -4,6 +4,7 @@ import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 import { images } from "../../constants";
+import Logo from "../../assets/svg/Logo";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -13,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <img src={images.logo} alt='logo' />
+        <Logo color='#DADADA'></Logo>
       </div>
       <ul className='app__navbar-links'>
         {links.map((link) => (

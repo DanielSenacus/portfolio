@@ -1,14 +1,17 @@
+
+@import './sass/globals';
+
 .app {
-  background-color: var(--primary-color);
+  background-color: $main_color;
   font-family: var(--font-base);
 }
 
 .app__whitebg {
-  background-color: var(--white-color);
+  background-color: $main_color;
 }
 
 .app__primarybg {
-  background-color: var(--primary-color);
+  background-color: $main_color;
 }
 
 .app__container {
@@ -55,11 +58,11 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
-  color: var(--black-color);
+  color: $second_color;
   text-transform: capitalize;
 
   span {
-    color: var(--secondary-color);
+    color: $second_color;
   }
 
   @media screen and (min-width: 2000px) {
@@ -102,6 +105,7 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+  background-color: $main_color;
 
   padding: 1rem;
 
@@ -126,8 +130,8 @@
     }
 
     &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      background-color: $second_color;
+      border-color: $second_color;
 
       svg {
         color: var(--white-color);
@@ -153,6 +157,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: $main_color;
 
   padding: 1rem;
 
@@ -166,7 +171,7 @@
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: $second_color;
     }
 
     @media screen and (min-width: 2000px) {
